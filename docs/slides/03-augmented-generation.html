@@ -7,6 +7,8 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4e5466e430b1db38349d513585fd1d59.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
@@ -162,13 +164,29 @@
 <li>Most “RAG” is this idea plus automation</li>
 </ul>
 </section>
-<section id="activity-coding-assistant-13-coding-assistant" class="slide level2">
-<h2>Activity: coding assistant (<code>13-coding-assistant</code>)</h2>
+<section id="your-turn" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>13-coding-assistant</code> and try a coding assistant on a niche package (R: <code>weathR</code>, Python: <code>NWS</code>):</p>
 <ul>
-<li>Ask the LLM to write a function using a niche package (R: <code>weathR</code>, Python: <code>NWS</code>)</li>
-<li>First with no context; note what goes wrong</li>
-<li>Then paste the README into the prompt and compare</li>
+<li>First, ask with no context and note what goes wrong.</li>
+<li>Then paste the README into the prompt and compare.</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="rag" class="title-slide slide level1 center" data-background-image="../images/undraw_ai-research-assistant_cxx0.svg" data-background-size="auto 50%" data-background-position="82% 85%" data-background-repeat="no-repeat">
@@ -184,13 +202,30 @@
 <li>The “retrieval” is just nearest-neighbor search</li>
 </ul>
 </section>
-<section id="activity-build-a-dynamic-rag-system-14-rag" class="slide level2">
-<h2>Activity: build a dynamic RAG system (<code>14-rag</code>)</h2>
+<section id="your-turn-1" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>14-rag</code> and build a dynamic RAG system:</p>
 <ul>
-<li>Source documents: R for Data Science (R) or Polars Cookbook (Python)</li>
-<li>Tools: <code>ragnar</code> (R), <code>llama-index</code> or chatlas helpers (Python)</li>
-<li>Wire retrieval up as a tool the model can call</li>
+<li>Source documents: R for Data Science (R) or Polars Cookbook (Python).</li>
+<li>Tools: <code>ragnar</code> (R), <code>llama-index</code> or chatlas helpers (Python).</li>
+<li>Wire retrieval up as a tool the model can call.</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="tool-calling" class="title-slide slide level1 center" data-background-image="../images/undraw_ai-research-assistant_cxx0.svg" data-background-size="auto 50%" data-background-position="82% 85%" data-background-repeat="no-repeat">
@@ -212,13 +247,30 @@
 <li>Automatic loop (<code>_demos/tools</code>): let the library handle the round trips</li>
 </ul>
 </section>
-<section id="activity-quiz-show-with-tools-15-quiz-game-tools" class="slide level2">
-<h2>Activity: quiz show with tools (<code>15-quiz-game-tools</code>)</h2>
+<section id="your-turn-2" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>15-quiz-game-tools</code> and wire tool calling into the quiz show app:</p>
 <ul>
-<li>Provide a function that plays a sound (R: <code>beepr</code>, Python: <code>playsound</code>)</li>
-<li>Document it well and register it as a tool in the quiz show app</li>
-<li>Watch the model learn when to play which sound</li>
+<li>Provide a function that plays a sound (R: <code>beepr</code>, Python: <code>playsound</code>).</li>
+<li>Document it well and register it as a tool in the quiz show app.</li>
+<li>Watch the model learn when to play which sound.</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="tool-calling-ui" class="title-slide slide level1 center" data-background-image="../images/undraw_ai-research-assistant_cxx0.svg" data-background-size="auto 50%" data-background-position="82% 85%" data-background-repeat="no-repeat">
@@ -227,13 +279,37 @@
 </section>
 <section id="showing-tool-activity-to-users-30-min" class="slide level2">
 <h2>Showing tool activity to users (30 min)</h2>
-<p>A series of progressive upgrades to the quiz show app (<code>16-quiz-game-ui</code>):</p>
 <ul>
-<li>Add tool annotations: give each tool an icon and title</li>
-<li>Return a <code>ContentToolResult</code> with a custom title and icon</li>
-<li>Track answers and score in reactive value boxes that update from tool calls</li>
-<li>(Optional) Add a “finish round” tool that displays the final score</li>
+<li>Tool annotations can give each tool an icon and title</li>
+<li><code>ContentToolResult</code> can return a custom title and icon</li>
+<li>Tool calls can update reactive state in your Shiny app</li>
 </ul>
+</section>
+<section id="your-turn-3" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>16-quiz-game-ui</code> and progressively upgrade the quiz show app:</p>
+<ul>
+<li>Add tool annotations: give each tool an icon and title.</li>
+<li>Return a <code>ContentToolResult</code> with a custom title and icon.</li>
+<li>Track answers and score in reactive value boxes that update from tool calls.</li>
+<li>(Optional) Add a “finish round” tool that displays the final score.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section id="thanks" class="title-slide slide level1 center">
 <h1>Thanks!</h1>

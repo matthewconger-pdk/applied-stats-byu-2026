@@ -31,11 +31,19 @@ How to add knowledge to LLMs and let them act on it. We will build a simple RAG 
 -   Stuff the relevant docs into the prompt yourself
 -   Most "RAG" is this idea plus automation
 
-## Activity: coding assistant (`13-coding-assistant`)
+## Your turn
 
--   Ask the LLM to write a function using a niche package (R: `weathR`, Python: `NWS`)
--   First with no context; note what goes wrong
--   Then paste the README into the prompt and compare
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `13-coding-assistant` and try a coding assistant on a niche package (R: `weathR`, Python: `NWS`):
+
+-   First, ask with no context and note what goes wrong.
+-   Then paste the README into the prompt and compare.
+:::
+
+{{< countdown minutes=10 >}}
 
 # RAG {background-image="../images/undraw_ai-research-assistant_cxx0.svg" background-size="auto 50%" background-position="82% 85%" background-repeat="no-repeat"}
 ## How RAG actually works (30 min)
@@ -45,11 +53,20 @@ How to add knowledge to LLMs and let them act on it. We will build a simple RAG 
 -   At query time, find the most similar chunks and add them to the prompt
 -   The "retrieval" is just nearest-neighbor search
 
-## Activity: build a dynamic RAG system (`14-rag`)
+## Your turn
 
--   Source documents: R for Data Science (R) or Polars Cookbook (Python)
--   Tools: `ragnar` (R), `llama-index` or chatlas helpers (Python)
--   Wire retrieval up as a tool the model can call
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `14-rag` and build a dynamic RAG system:
+
+-   Source documents: R for Data Science (R) or Polars Cookbook (Python).
+-   Tools: `ragnar` (R), `llama-index` or chatlas helpers (Python).
+-   Wire retrieval up as a tool the model can call.
+:::
+
+{{< countdown minutes=20 >}}
 
 # Tool calling {background-image="../images/undraw_ai-research-assistant_cxx0.svg" background-size="auto 50%" background-position="82% 85%" background-repeat="no-repeat"}
 ## Letting the model use your functions (20 min)
@@ -63,21 +80,43 @@ How to add knowledge to LLMs and let them act on it. We will build a simple RAG 
 -   Manual loop (`_demos/manual-tools`): see every step
 -   Automatic loop (`_demos/tools`): let the library handle the round trips
 
-## Activity: quiz show with tools (`15-quiz-game-tools`)
+## Your turn
 
--   Provide a function that plays a sound (R: `beepr`, Python: `playsound`)
--   Document it well and register it as a tool in the quiz show app
--   Watch the model learn when to play which sound
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `15-quiz-game-tools` and wire tool calling into the quiz show app:
+
+-   Provide a function that plays a sound (R: `beepr`, Python: `playsound`).
+-   Document it well and register it as a tool in the quiz show app.
+-   Watch the model learn when to play which sound.
+:::
+
+{{< countdown minutes=20 >}}
 
 # Tool calling UI {background-image="../images/undraw_ai-research-assistant_cxx0.svg" background-size="auto 50%" background-position="82% 85%" background-repeat="no-repeat"}
 ## Showing tool activity to users (30 min)
 
-A series of progressive upgrades to the quiz show app (`16-quiz-game-ui`):
+-   Tool annotations can give each tool an icon and title
+-   `ContentToolResult` can return a custom title and icon
+-   Tool calls can update reactive state in your Shiny app
 
--   Add tool annotations: give each tool an icon and title
--   Return a `ContentToolResult` with a custom title and icon
--   Track answers and score in reactive value boxes that update from tool calls
--   (Optional) Add a "finish round" tool that displays the final score
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `16-quiz-game-ui` and progressively upgrade the quiz show app:
+
+-   Add tool annotations: give each tool an icon and title.
+-   Return a `ContentToolResult` with a custom title and icon.
+-   Track answers and score in reactive value boxes that update from tool calls.
+-   (Optional) Add a "finish round" tool that displays the final score.
+:::
+
+{{< countdown minutes=20 >}}
 
 
 # Thanks!
@@ -95,5 +134,5 @@ A series of progressive upgrades to the quiz show app (`16-quiz-game-ui`):
 </center>
 
 ::: footer
-Illustrations from [unDraw](https://undraw.co/) 
+Illustrations from [unDraw](https://undraw.co/)
 :::

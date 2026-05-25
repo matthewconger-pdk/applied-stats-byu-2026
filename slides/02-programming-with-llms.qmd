@@ -31,10 +31,19 @@ A deeper look at what you can do with LLMs from code that you can't easily do in
 -   Tradeoffs: capability, context length, speed, cost
 -   Newer is not always better for your task
 
-## Activity: same question, different model (`05-models`)
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `05-models` and send the same prompt to several providers:
 
 -   Change one string to switch providers: `chat_openai()` vs. `chat_anthropic()`, etc.
--   Compare answers, latency, and token usage
+-   Compare answers, latency, and token usage.
+:::
+
+{{< countdown minutes=10 >}}
 
 # Multi-modal input {background-image="../images/undraw_large-language-models_m4no.svg" background-size="auto 45%" background-position="82% 85%" background-repeat="no-repeat"}
 ## Beyond text (15 min)
@@ -43,10 +52,19 @@ A deeper look at what you can do with LLMs from code that you can't easily do in
 -   PDFs: pass document bytes directly
 -   When to extract text up front vs. let the model see the file
 
-## Activities
+## Your turn
 
--   `06-vision`: pass food photos and ask for recipe suggestions
--   `07-pdf`: take a PDF recipe and turn it into clean Markdown
+::: {.callout-note icon=false}
+
+## Activity
+
+Try a multi-modal input:
+
+-   Open `06-vision` and pass food photos to ask for recipe suggestions.
+-   Open `07-pdf` and take a PDF recipe and turn it into clean Markdown.
+:::
+
+{{< countdown minutes=10 >}}
 
 # Structured output {background-image="../images/undraw_large-language-models_m4no.svg" background-size="auto 45%" background-position="82% 85%" background-repeat="no-repeat"}
 ## Getting parseable answers (15 min)
@@ -55,10 +73,18 @@ A deeper look at what you can do with LLMs from code that you can't easily do in
 -   Python: Pydantic models with `chatlas`
 -   Schemas double as documentation for the model
 
-## Activity (`08-structured-output`)
+## Your turn
 
--   Extract structured fields from the recipe PDF: ingredients, steps, yield, prep time
--   Tip: turn on `use_attribute_docstrings` in Pydantic to let docstrings guide the model
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `08-structured-output` and extract structured fields from the recipe PDF (ingredients, steps, yield, prep time).
+
+Tip: turn on `use_attribute_docstrings` in Pydantic to let docstrings guide the model.
+:::
+
+{{< countdown minutes=15 >}}
 
 # Parallel and batch calls {background-image="../images/undraw_large-language-models_m4no.svg" background-size="auto 45%" background-position="82% 85%" background-repeat="no-repeat"}
 ## Scaling out (10 min)
@@ -67,10 +93,16 @@ A deeper look at what you can do with LLMs from code that you can't easily do in
 -   Parallel API calls vs. provider batch APIs (cheaper, slower)
 -   Watch for rate limits
 
-## Activity (`09-batch`)
+## Your turn
 
--   Re-run the structured extraction across many recipes in parallel
--   Save the JSON output so we can reuse it later
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `09-batch` and re-run the structured extraction across many recipes in parallel. Save the JSON output so we can reuse it later.
+:::
+
+{{< countdown minutes=10 >}}
 
 # Prompt engineering and hallucinations {background-image="../images/undraw_large-language-models_m4no.svg" background-size="auto 45%" background-position="82% 85%" background-repeat="no-repeat"}
 ## Models will confidently make things up (35 min)
@@ -78,24 +110,52 @@ A deeper look at what you can do with LLMs from code that you can't easily do in
 -   What hallucination looks like
 -   Why a confident answer is not a correct answer
 
-## Activity: ask about a plot (`10-plot-interpret`)
+## Your turn
 
--   Generate a plot of mpg vs. weight from `mtcars`
--   Ask the model to interpret it
--   Discuss what it got right and where it leaned on priors
+::: {.callout-note icon=false}
 
-## Activity: ask about noise (`11-plot-noise`)
+## Activity
 
--   Replace the plot with random noise, keep the prompt the same
--   What does the model say?
--   Part 2: pair up and try to steer the model into a "decent" interpretation of pure noise
+Open `10-plot-interpret` and ask the model about a plot:
+
+-   Generate a plot of mpg vs. weight from `mtcars`.
+-   Ask the model to interpret it.
+-   Discuss what it got right and where it leaned on priors.
+:::
+
+{{< countdown minutes=10 >}}
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `11-plot-noise`:
+
+-   Replace the plot with random noise; keep the prompt the same.
+-   See what the model says.
+-   Part 2: pair up and try to steer the model into a "decent" interpretation of pure noise.
+:::
+
+{{< countdown minutes=15 >}}
 
 ## System prompt best practices
 
 -   Be explicit about role, audience, and format
 -   Show, don't just tell (few-shot examples)
 -   Tell the model how to handle uncertainty
--   **Activity** (`12-quiz-game-prompt`): write the system prompt for our quiz game show
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `12-quiz-game-prompt` and write the system prompt for our quiz game show.
+:::
+
+{{< countdown minutes=15 >}}
 
 
 # Thanks!
@@ -113,5 +173,5 @@ A deeper look at what you can do with LLMs from code that you can't easily do in
 </center>
 
 ::: footer
-Illustrations from [unDraw](https://undraw.co/) 
+Illustrations from [unDraw](https://undraw.co/)
 :::

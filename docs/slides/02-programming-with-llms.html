@@ -7,6 +7,8 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4e5466e430b1db38349d513585fd1d59.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
@@ -162,12 +164,29 @@
 <li>Newer is not always better for your task</li>
 </ul>
 </section>
-<section id="activity-same-question-different-model-05-models" class="slide level2">
-<h2>Activity: same question, different model (<code>05-models</code>)</h2>
+<section id="your-turn" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>05-models</code> and send the same prompt to several providers:</p>
 <ul>
 <li>Change one string to switch providers: <code>chat_openai()</code> vs.&nbsp;<code>chat_anthropic()</code>, etc.</li>
-<li>Compare answers, latency, and token usage</li>
+<li>Compare answers, latency, and token usage.</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="multi-modal-input" class="title-slide slide level1 center" data-background-image="../images/undraw_large-language-models_m4no.svg" data-background-size="auto 45%" data-background-position="82% 85%" data-background-repeat="no-repeat">
@@ -182,12 +201,29 @@
 <li>When to extract text up front vs.&nbsp;let the model see the file</li>
 </ul>
 </section>
-<section id="activities" class="slide level2">
-<h2>Activities</h2>
+<section id="your-turn-1" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Try a multi-modal input:</p>
 <ul>
-<li><code>06-vision</code>: pass food photos and ask for recipe suggestions</li>
-<li><code>07-pdf</code>: take a PDF recipe and turn it into clean Markdown</li>
+<li>Open <code>06-vision</code> and pass food photos to ask for recipe suggestions.</li>
+<li>Open <code>07-pdf</code> and take a PDF recipe and turn it into clean Markdown.</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="structured-output" class="title-slide slide level1 center" data-background-image="../images/undraw_large-language-models_m4no.svg" data-background-size="auto 45%" data-background-position="82% 85%" data-background-repeat="no-repeat">
@@ -202,12 +238,26 @@
 <li>Schemas double as documentation for the model</li>
 </ul>
 </section>
-<section id="activity-08-structured-output" class="slide level2">
-<h2>Activity (<code>08-structured-output</code>)</h2>
-<ul>
-<li>Extract structured fields from the recipe PDF: ingredients, steps, yield, prep time</li>
-<li>Tip: turn on <code>use_attribute_docstrings</code> in Pydantic to let docstrings guide the model</li>
-</ul>
+<section id="your-turn-2" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>08-structured-output</code> and extract structured fields from the recipe PDF (ingredients, steps, yield, prep time).</p>
+<p>Tip: turn on <code>use_attribute_docstrings</code> in Pydantic to let docstrings guide the model.</p>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="parallel-and-batch-calls" class="title-slide slide level1 center" data-background-image="../images/undraw_large-language-models_m4no.svg" data-background-size="auto 45%" data-background-position="82% 85%" data-background-repeat="no-repeat">
@@ -222,12 +272,25 @@
 <li>Watch for rate limits</li>
 </ul>
 </section>
-<section id="activity-09-batch" class="slide level2">
-<h2>Activity (<code>09-batch</code>)</h2>
-<ul>
-<li>Re-run the structured extraction across many recipes in parallel</li>
-<li>Save the JSON output so we can reuse it later</li>
-</ul>
+<section id="your-turn-3" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>09-batch</code> and re-run the structured extraction across many recipes in parallel. Save the JSON output so we can reuse it later.</p>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="prompt-engineering-and-hallucinations" class="title-slide slide level1 center" data-background-image="../images/undraw_large-language-models_m4no.svg" data-background-size="auto 45%" data-background-position="82% 85%" data-background-repeat="no-repeat">
@@ -241,21 +304,55 @@
 <li>Why a confident answer is not a correct answer</li>
 </ul>
 </section>
-<section id="activity-ask-about-a-plot-10-plot-interpret" class="slide level2">
-<h2>Activity: ask about a plot (<code>10-plot-interpret</code>)</h2>
+<section id="your-turn-4" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>10-plot-interpret</code> and ask the model about a plot:</p>
 <ul>
-<li>Generate a plot of mpg vs.&nbsp;weight from <code>mtcars</code></li>
-<li>Ask the model to interpret it</li>
-<li>Discuss what it got right and where it leaned on priors</li>
+<li>Generate a plot of mpg vs.&nbsp;weight from <code>mtcars</code>.</li>
+<li>Ask the model to interpret it.</li>
+<li>Discuss what it got right and where it leaned on priors.</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
-<section id="activity-ask-about-noise-11-plot-noise" class="slide level2">
-<h2>Activity: ask about noise (<code>11-plot-noise</code>)</h2>
+<section id="your-turn-5" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>11-plot-noise</code>:</p>
 <ul>
-<li>Replace the plot with random noise, keep the prompt the same</li>
-<li>What does the model say?</li>
-<li>Part 2: pair up and try to steer the model into a “decent” interpretation of pure noise</li>
+<li>Replace the plot with random noise; keep the prompt the same.</li>
+<li>See what the model says.</li>
+<li>Part 2: pair up and try to steer the model into a “decent” interpretation of pure noise.</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="system-prompt-best-practices" class="slide level2">
 <h2>System prompt best practices</h2>
@@ -263,8 +360,27 @@
 <li>Be explicit about role, audience, and format</li>
 <li>Show, don’t just tell (few-shot examples)</li>
 <li>Tell the model how to handle uncertainty</li>
-<li><strong>Activity</strong> (<code>12-quiz-game-prompt</code>): write the system prompt for our quiz game show</li>
 </ul>
+</section>
+<section id="your-turn-6" class="slide level2">
+<h2>Your turn</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Activity</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>12-quiz-game-prompt</code> and write the system prompt for our quiz game show.</p>
+</div>
+</div>
+</div>
+<div id="timer_4ab6cb44d746de4bab043e81caaae4f7e424f6f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section id="thanks" class="title-slide slide level1 center">
 <h1>Thanks!</h1>

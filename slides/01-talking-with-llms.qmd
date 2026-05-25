@@ -52,13 +52,33 @@ format:
 
 -   Introductions
 -   What to expect from these two days
--   **Activity:** introduce yourself to your neighbors
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Introduce yourself to your neighbors.
+:::
+
+{{< countdown minutes=5 >}}
 
 ## Set-up and verify API access (10 min)
 
 -   How API keys work
 -   Where to put them so the workshop code can find them
--   **Activity** (`01-hello-llm`): make your first API call by writing a short "I'm at SIAS 2026" social media post
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `01-hello-llm` and make your first API call by writing a short "I'm at SIAS 2026" social media post.
+:::
+
+{{< countdown minutes=5 >}}
 
 ## Think empirically, be pragmatic (10 min)
 
@@ -73,10 +93,19 @@ format:
 -   Message roles: `system`, `user`, `assistant`
 -   `ellmer` and `chatlas` hide the boilerplate
 
-## Activity: word guessing game (`02-word-game`)
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `02-word-game` and play a word guessing game:
 
 -   System prompt: *You are playing a word guessing game. At each turn, guess the word and tell us what it is.*
--   First message includes a modifier (e.g. "In British English," "In pirate,") that steers later answers
+-   Include a modifier in the first message (e.g. "In British English," "In pirate,") and watch how it steers later answers.
+:::
+
+{{< countdown minutes=10 >}}
 
 ## The conversation is stateless
 
@@ -97,12 +126,32 @@ format:
 
 -   `live_console()` / `live_browser()` in ellmer
 -   `chat.console()` / `chat.app()` in chatlas
--   **Activity** (`03-live`): launch a live chat against your own chat object
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `03-live` and launch a live chat against your own chat object.
+:::
+
+{{< countdown minutes=5 >}}
 
 ## Build your own Shiny chat app
 
 -   Shiny `chat_ui()` and `chat_append()` (R: also `chat_mod_server()`)
--   **Activity** (`04-word-game-reverse`): flip the word game so the LLM holds a secret word and gives hints; the user has to guess
+
+## Your turn
+
+::: {.callout-note icon=false}
+
+## Activity
+
+Open `04-word-game-reverse` and flip the word game so the LLM holds a secret word and gives hints; the user has to guess.
+:::
+
+{{< countdown minutes=15 >}}
 
 
 # Thanks!
@@ -120,5 +169,5 @@ format:
 </center>
 
 ::: footer
-Illustrations from [unDraw](https://undraw.co/) 
+Illustrations from [unDraw](https://undraw.co/)
 :::
