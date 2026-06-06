@@ -252,7 +252,7 @@
 <p><strong>Demo</strong></p>
 </div>
 <div class="callout-content">
-<p>The manual tool-calling loop: see every request, tool call, and result</p>
+<p>Human-in-the-loop: the model writes its tool request as text, and a person runs it and reports back</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># demo/04-manual-tools/04-manual-tools-app.R</span></span>
 <span id="cb1-2"><a></a>shiny<span class="sc">::</span><span class="fu">runApp</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -276,8 +276,9 @@
 </div>
 <div class="callout-content">
 <p>The automatic tool-calling loop: the library handles the round trips for you</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># demo/04-weather-tool/04-weather-tool-app.R</span></span>
-<span id="cb2-2"><a></a>shiny<span class="sc">::</span><span class="fu">runApp</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># demo/04-weather-tool/04-weather-tool.qmd</span></span>
+<span id="cb2-2"><a></a>chat.register_tool(get_weather)</span>
+<span id="cb2-3"><a></a>chat.chat(<span class="st">"What should I wear to SIAS 2026 in Provo, UT?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -299,7 +300,7 @@
 </div>
 </div>
 </div>
-<div id="timer_32740a48a6c84659e165592b7c4dfb9ad240754e" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_ea89c4f1541967b94152b0cab593ec39c134f27a" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -338,7 +339,7 @@
 </div>
 </div>
 </div>
-<div id="timer_32740a48a6c84659e165592b7c4dfb9ad240754e" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_ea89c4f1541967b94152b0cab593ec39c134f27a" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -389,7 +390,7 @@
 </div>
 </div>
 </div>
-<div id="timer_32740a48a6c84659e165592b7c4dfb9ad240754e" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_ea89c4f1541967b94152b0cab593ec39c134f27a" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
