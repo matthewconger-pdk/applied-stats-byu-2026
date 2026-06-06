@@ -4,7 +4,23 @@
 # message includes a modifier (e.g. "In British English,") that steers later
 # turns; this shows how the conversation carries state in the message history.
 
+# %% Import package
 library(ellmer)
 
-# TODO: create a chat with a system prompt for the guessing game
-# TODO: send a series of turns and observe how the modifier persists
+# %% Set up a chat with a system prompt
+chat <- chat_anthropic(
+  system_prompt = paste(
+    "We are playing a word guessing game.",
+    "At each turn, you guess the word and tell us what it is."
+  )
+)
+
+# Ask the first question:
+____("In British English, guess the word for the person who lives next door.")
+
+# Ask the second question:
+____("What helps a car move smoothly down the road?")
+
+# %% Compare with...
+chat2 <- chat_anthropic()
+chat2$____

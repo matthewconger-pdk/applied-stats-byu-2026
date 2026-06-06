@@ -4,8 +4,26 @@
 # and gives hints; the user has to guess.
 
 library(shiny)
-library(shinychat)
+library(bslib)
 library(ellmer)
+library(shinychat)
 
-# TODO: write the system prompt that hides a secret word and constrains hints
-# TODO: build a minimal Shiny app using chat_ui() and chat_mod_server()
+system_prompt <- paste("
+We are playing a word guessing game. You are going to think of a random word.
+When you do, write it in an HTML comment so that you can remember it, but the
+user can't see it.
+
+Give the user an initial clue and then only answer their questions with yes or
+no. When they win, use lots of emojis.
+")
+
+ui <- page_fillable(
+  chat_mod_ui("chat", placeholder = '(Say "Let\'s play" to get started!)')
+)
+
+server <- function(input, output, session) {
+  client <- chat_anthropic(system_prompt = system_prompt)
+  chat_mod_server("chat", client)
+}
+
+shinyApp(ui, server)

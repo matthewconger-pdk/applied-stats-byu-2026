@@ -3,6 +3,14 @@
 # Goal: launch a live chat UI against an existing chat object using
 # chat.console() and chat.app().
 
+# %% Import packages and create chat
 import chatlas
+import dotenv
+dotenv.load_dotenv()
+chat = chatlas.ChatAnthropic()
 
-# TODO: create a chat and call chat.console() / chat.app()
+# %% Converse with the chatbot in your console
+___.console()
+
+# %% After a bit, exit the chat and try chatting in a Shiny app.
+___.app()

@@ -1,9 +1,14 @@
 # 01-hello-llm.R
 # Slide 01: Talking with LLMs via code (Set-up and verify API access)
-# Goal: verify API access by writing a short social media post about SIAS 2026.
+# Goal: verify API access by writing a short poem about SIAS 2026.
 
+# %% Import package
 library(ellmer)
 
-# dotenv::load_dot_env(here::here(".env"))
 
-# TODO: create a chat object and send a first message
+# %% Verify API access by writing a short poem about SIAS 2026
+chat <- chat_anthropic()
+chat$chat(
+  "I'm at SIAS 2026 to learn about programming with LLMs and ellmer!",
+  "Write a short poem or limerick to celebrate."
+)

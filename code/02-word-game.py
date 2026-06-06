@@ -4,7 +4,19 @@
 # message includes a modifier (e.g. "In British English,") that steers later
 # turns; this shows how the conversation carries state in the message history.
 
+# %% Import packages and load environment variable for API access
 import chatlas
+import dotenv
+dotenv.load_dotenv()
 
-# TODO: create a chat with a system prompt for the guessing game
-# TODO: send a series of turns and observe how the modifier persists
+# %% Set up a chat with a system prompt
+chat = chatlas.ChatAnthropic(
+    system_prompt="We are playing a word guessing game. "
+    "At each turn, you guess the word and tell us what it is."
+)
+___("In British English, guess the word for a person who lives next door.")
+___("What helps a car move smoothly down the road?")
+
+# %% Compare with...
+chat2 = chatlas.ChatAnthropic()
+chat2.___
