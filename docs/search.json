@@ -70,6 +70,13 @@
     "text": "Chatting with your data (10 min)\n\nA drop-in Shiny module that turns a data frame into a chat-driven explorer\nThe model writes the SQL or dplyr; the app runs it"
   },
   {
+    "objectID": "slides/04-beyond-tools.html#your-turn",
+    "href": "slides/04-beyond-tools.html#your-turn",
+    "title": "Beyond tools",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 17-querychat and add querychat to an existing Shiny app.\n\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
     "objectID": "slides/04-beyond-tools.html#model-context-protocol-10-min",
     "href": "slides/04-beyond-tools.html#model-context-protocol-10-min",
     "title": "Beyond tools",
@@ -77,11 +84,11 @@
     "text": "Model Context Protocol (10 min)\n\nA common standard for exposing tools and resources to LLM clients\nWhy this matters: write a server once, use it from many clients\nMCP support is growing in Positron, VS Code, Claude Desktop, etc."
   },
   {
-    "objectID": "slides/04-beyond-tools.html#activity-18-mcp",
-    "href": "slides/04-beyond-tools.html#activity-18-mcp",
+    "objectID": "slides/04-beyond-tools.html#your-turn-1",
+    "href": "slides/04-beyond-tools.html#your-turn-1",
     "title": "Beyond tools",
-    "section": "Activity (18-mcp)",
-    "text": "Activity (18-mcp)\n\nConnect an MCP server to ellmer or chatlas\nOptions to try: ArXiV, fetcher, git-ingest, github, context7\nNotice: the model now has access to tools you did not write"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 18-mcp and connect an MCP server to ellmer or chatlas:\n\nOptions to try: ArXiV, fetcher, git-ingest, github, context7.\nNotice: the model now has access to tools you did not write.\n\n\n\n\n\n  \n    −\n    +\n \n 15:00"
   },
   {
     "objectID": "slides/04-beyond-tools.html#what-is-an-agent-30-min",
@@ -105,11 +112,11 @@
     "text": "The landscape (15 min)\n\nMajor providers: OpenAI, Anthropic, Google, plus local options like ollama\nTradeoffs: capability, context length, speed, cost\nNewer is not always better for your task"
   },
   {
-    "objectID": "slides/02-programming-with-llms.html#activity-same-question-different-model-05-models",
-    "href": "slides/02-programming-with-llms.html#activity-same-question-different-model-05-models",
+    "objectID": "slides/02-programming-with-llms.html#your-turn",
+    "href": "slides/02-programming-with-llms.html#your-turn",
     "title": "Programming with LLMs",
-    "section": "Activity: same question, different model (05-models)",
-    "text": "Activity: same question, different model (05-models)\n\nChange one string to switch providers: chat_openai() vs. chat_anthropic(), etc.\nCompare answers, latency, and token usage"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 05-models and send the same prompt to several providers:\n\nChange one string to switch providers: chat_openai() vs. chat_anthropic(), etc.\nCompare answers, latency, and token usage.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "slides/02-programming-with-llms.html#beyond-text-15-min",
@@ -119,11 +126,11 @@
     "text": "Beyond text (15 min)\n\nVision: pass an image alongside your prompt\nPDFs: pass document bytes directly\nWhen to extract text up front vs. let the model see the file"
   },
   {
-    "objectID": "slides/02-programming-with-llms.html#activities",
-    "href": "slides/02-programming-with-llms.html#activities",
+    "objectID": "slides/02-programming-with-llms.html#your-turn-1",
+    "href": "slides/02-programming-with-llms.html#your-turn-1",
     "title": "Programming with LLMs",
-    "section": "Activities",
-    "text": "Activities\n\n06-vision: pass food photos and ask for recipe suggestions\n07-pdf: take a PDF recipe and turn it into clean Markdown"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nTry a multi-modal input:\n\nOpen 06-vision and pass food photos to ask for recipe suggestions.\nOpen 07-pdf and take a PDF recipe and turn it into clean Markdown.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "slides/02-programming-with-llms.html#getting-parseable-answers-15-min",
@@ -133,11 +140,11 @@
     "text": "Getting parseable answers (15 min)\n\nR: ellmer::type_*()\nPython: Pydantic models with chatlas\nSchemas double as documentation for the model"
   },
   {
-    "objectID": "slides/02-programming-with-llms.html#activity-08-structured-output",
-    "href": "slides/02-programming-with-llms.html#activity-08-structured-output",
+    "objectID": "slides/02-programming-with-llms.html#your-turn-2",
+    "href": "slides/02-programming-with-llms.html#your-turn-2",
     "title": "Programming with LLMs",
-    "section": "Activity (08-structured-output)",
-    "text": "Activity (08-structured-output)\n\nExtract structured fields from the recipe PDF: ingredients, steps, yield, prep time\nTip: turn on use_attribute_docstrings in Pydantic to let docstrings guide the model"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 08-structured-output and extract structured fields from the recipe PDF (ingredients, steps, yield, prep time).\nTip: turn on use_attribute_docstrings in Pydantic to let docstrings guide the model.\n\n\n\n\n  \n    −\n    +\n \n 15:00"
   },
   {
     "objectID": "slides/02-programming-with-llms.html#scaling-out-10-min",
@@ -147,11 +154,11 @@
     "text": "Scaling out (10 min)\n\nWhen one prompt becomes a hundred\nParallel API calls vs. provider batch APIs (cheaper, slower)\nWatch for rate limits"
   },
   {
-    "objectID": "slides/02-programming-with-llms.html#activity-09-batch",
-    "href": "slides/02-programming-with-llms.html#activity-09-batch",
+    "objectID": "slides/02-programming-with-llms.html#your-turn-3",
+    "href": "slides/02-programming-with-llms.html#your-turn-3",
     "title": "Programming with LLMs",
-    "section": "Activity (09-batch)",
-    "text": "Activity (09-batch)\n\nRe-run the structured extraction across many recipes in parallel\nSave the JSON output so we can reuse it later"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 09-batch and re-run the structured extraction across many recipes in parallel. Save the JSON output so we can reuse it later.\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "slides/02-programming-with-llms.html#models-will-confidently-make-things-up-35-min",
@@ -161,18 +168,18 @@
     "text": "Models will confidently make things up (35 min)\n\nWhat hallucination looks like\nWhy a confident answer is not a correct answer"
   },
   {
-    "objectID": "slides/02-programming-with-llms.html#activity-ask-about-a-plot-10-plot-interpret",
-    "href": "slides/02-programming-with-llms.html#activity-ask-about-a-plot-10-plot-interpret",
+    "objectID": "slides/02-programming-with-llms.html#your-turn-4",
+    "href": "slides/02-programming-with-llms.html#your-turn-4",
     "title": "Programming with LLMs",
-    "section": "Activity: ask about a plot (10-plot-interpret)",
-    "text": "Activity: ask about a plot (10-plot-interpret)\n\nGenerate a plot of mpg vs. weight from mtcars\nAsk the model to interpret it\nDiscuss what it got right and where it leaned on priors"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 10-plot-interpret and ask the model about a plot:\n\nGenerate a plot of mpg vs. weight from mtcars.\nAsk the model to interpret it.\nDiscuss what it got right and where it leaned on priors.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
-    "objectID": "slides/02-programming-with-llms.html#activity-ask-about-noise-11-plot-noise",
-    "href": "slides/02-programming-with-llms.html#activity-ask-about-noise-11-plot-noise",
+    "objectID": "slides/02-programming-with-llms.html#your-turn-5",
+    "href": "slides/02-programming-with-llms.html#your-turn-5",
     "title": "Programming with LLMs",
-    "section": "Activity: ask about noise (11-plot-noise)",
-    "text": "Activity: ask about noise (11-plot-noise)\n\nReplace the plot with random noise, keep the prompt the same\nWhat does the model say?\nPart 2: pair up and try to steer the model into a “decent” interpretation of pure noise"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 11-plot-noise:\n\nReplace the plot with random noise; keep the prompt the same.\nSee what the model says.\nPart 2: pair up and try to steer the model into a “decent” interpretation of pure noise.\n\n\n\n\n\n  \n    −\n    +\n \n 15:00"
   },
   {
     "objectID": "slides/02-programming-with-llms.html#system-prompt-best-practices",
@@ -180,6 +187,13 @@
     "title": "Programming with LLMs",
     "section": "System prompt best practices",
     "text": "System prompt best practices\n\nBe explicit about role, audience, and format\nShow, don’t just tell (few-shot examples)\nTell the model how to handle uncertainty"
+  },
+  {
+    "objectID": "slides/02-programming-with-llms.html#your-turn-6",
+    "href": "slides/02-programming-with-llms.html#your-turn-6",
+    "title": "Programming with LLMs",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 12-quiz-game-prompt and write the system prompt for our quiz game show.\n\n\n\n\n  \n    −\n    +\n \n 15:00"
   },
   {
     "objectID": "index.html#welcome",
@@ -200,7 +214,7 @@
     "href": "index.html#preparation",
     "title": "Programming with LLMs for Data Practitioners",
     "section": "Preparation",
-    "text": "Preparation\nWe will be working locally during the workshop, so please come with a laptop that has the following installed (all available for free):\n\nA recent version of Python (perhaps installed using uv) and/or R\nA recent version of your IDE of choice, such as Positron, RStudio, or VS Code\nClone the workshop repo\nInstall the Python packages from requirements.txt and/or the R packages via TODO.\n\nYou will also need API credentials for at least one LLM provider; we will share details closer to the workshop."
+    "text": "Preparation\nWe will be working locally during the workshop, so please come with a laptop that has the following installed (all available for free):\n\nA recent version of Python (perhaps installed using uv) and/or R\nA recent version of Positron, or optionally if preferred, RStudio\nClone the workshop repo\nInstall the Python packages from requirements.txt and/or the R packages via TODO.\n\nYou will also need API credentials for at least one LLM provider; we will share details closer to the workshop."
   },
   {
     "objectID": "index.html#schedule",
@@ -231,67 +245,88 @@
     "text": "Who are you?\n\nYou know some R and/or Python\nYou are curious about working with LLMs from code\nYou want hands-on practice, not just slides"
   },
   {
+    "objectID": "slides/01-talking-with-llms.html#welcome",
+    "href": "slides/01-talking-with-llms.html#welcome",
+    "title": "Talking with LLMs via code",
+    "section": "Welcome",
+    "text": "Welcome\n\nIntroductions\nWhat to expect from these two days\nBuild on AI (Day 1)\nBuild with AI (Day 2)"
+  },
+  {
     "objectID": "slides/01-talking-with-llms.html#day-1-build-on-ai",
     "href": "slides/01-talking-with-llms.html#day-1-build-on-ai",
     "title": "Talking with LLMs via code",
     "section": "Day 1: Build on AI",
-    "text": "Day 1: Build on AI\n\nTalking with LLMs via code (this session)\nProgramming with LLMs\nAugmented generation\nBeyond tools"
+    "text": "Day 1: Build on AI\n\nTalking with LLMs via code (this session!)\nProgramming with LLMs\nAugmented generation\nBeyond tools"
   },
   {
-    "objectID": "slides/01-talking-with-llms.html#welcome-10-min",
-    "href": "slides/01-talking-with-llms.html#welcome-10-min",
+    "objectID": "slides/01-talking-with-llms.html#your-turn",
+    "href": "slides/01-talking-with-llms.html#your-turn",
     "title": "Talking with LLMs via code",
-    "section": "Welcome (10 min)",
-    "text": "Welcome (10 min)\n\nIntroductions\nWhat to expect from these two days"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nIntroduce yourself to your neighbors.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "slides/01-talking-with-llms.html#set-up-and-verify-api-access-10-min",
-    "href": "slides/01-talking-with-llms.html#set-up-and-verify-api-access-10-min",
+    "objectID": "slides/01-talking-with-llms.html#set-up-and-verify-api-access",
+    "href": "slides/01-talking-with-llms.html#set-up-and-verify-api-access",
     "title": "Talking with LLMs via code",
-    "section": "Set-up and verify API access (10 min)",
-    "text": "Set-up and verify API access (10 min)\n\nHow API keys work\nWhere to put them so the workshop code can find them"
+    "section": "Set-up and verify API access",
+    "text": "Set-up and verify API access\n\nHow API keys work\nWhere to put them so the workshop code can find them"
   },
   {
-    "objectID": "slides/01-talking-with-llms.html#think-empirically-be-pragmatic-10-min",
-    "href": "slides/01-talking-with-llms.html#think-empirically-be-pragmatic-10-min",
+    "objectID": "slides/01-talking-with-llms.html#your-turn-1",
+    "href": "slides/01-talking-with-llms.html#your-turn-1",
     "title": "Talking with LLMs via code",
-    "section": "Think empirically, be pragmatic (10 min)",
-    "text": "Think empirically, be pragmatic (10 min)\n\nThe right mindset for working with LLMs\nModels are not deterministic; try things, iterate, compare\nExtra time here to troubleshoot setup as needed"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 01-hello-llm and make your first API call by writing a short “I’m at SIAS 2026” poem or limerick.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "slides/01-talking-with-llms.html#to-get-a-response-you-send-a-message-20-min",
-    "href": "slides/01-talking-with-llms.html#to-get-a-response-you-send-a-message-20-min",
+    "objectID": "slides/01-talking-with-llms.html#think-empirically-be-pragmatic",
+    "href": "slides/01-talking-with-llms.html#think-empirically-be-pragmatic",
     "title": "Talking with LLMs via code",
-    "section": "To get a response, you send a message (20 min)",
-    "text": "To get a response, you send a message (20 min)\n\nUnder the hood: an HTTP request to a provider\nMessage roles: system, user, assistant\nellmer and chatlas hide the boilerplate"
+    "section": "Think empirically, be pragmatic",
+    "text": "Think empirically, be pragmatic\n\nThe right mindset for working with LLMs\nModels are not deterministic! Try things, iterate, compare"
   },
   {
-    "objectID": "slides/01-talking-with-llms.html#activity-word-guessing-game-02-word-game",
-    "href": "slides/01-talking-with-llms.html#activity-word-guessing-game-02-word-game",
+    "objectID": "slides/01-talking-with-llms.html#to-get-a-response-you-send-a-message",
+    "href": "slides/01-talking-with-llms.html#to-get-a-response-you-send-a-message",
     "title": "Talking with LLMs via code",
-    "section": "Activity: word guessing game (02-word-game)",
-    "text": "Activity: word guessing game (02-word-game)\n\nSystem prompt: You are playing a word guessing game. At each turn, guess the word and tell us what it is.\nFirst message includes a modifier (e.g. “In British English,” “In pirate,”) that steers later answers"
+    "section": "To get a response, you send a message",
+    "text": "To get a response, you send a message\n\nUnder the hood: an HTTP request to a provider\nMessage roles: system, user, assistant\nellmer and chatlas hide the boilerplate"
+  },
+  {
+    "objectID": "slides/01-talking-with-llms.html#your-turn-2",
+    "href": "slides/01-talking-with-llms.html#your-turn-2",
+    "title": "Talking with LLMs via code",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 02-word-game and play a word guessing game:\n\nSystem prompt: You are playing a word guessing game. At each turn, guess the word and tell us what it is.\nInclude a modifier in the first message (e.g. “In British English,” “In pirate,”) and watch how it steers later answers.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "slides/01-talking-with-llms.html#the-conversation-is-stateless",
     "href": "slides/01-talking-with-llms.html#the-conversation-is-stateless",
     "title": "Talking with LLMs via code",
     "section": "The conversation is stateless",
-    "text": "The conversation is stateless\n\nThe model has no memory between requests\nThe library replays history each turn\nDemo (clearbot): show what happens when you clear the chat"
+    "text": "The conversation is stateless\n\nThe model has no memory between requests\nThe library replays history each turn\n\n\n\n\nDemo\n\n\nWhat happens when you clear the chat?\ncd demo/01-clearbot\nuv run shiny run app.py"
   },
   {
-    "objectID": "slides/01-talking-with-llms.html#tokens-as-the-fundamental-unit-20-min",
-    "href": "slides/01-talking-with-llms.html#tokens-as-the-fundamental-unit-20-min",
+    "objectID": "slides/01-talking-with-llms.html#tokens-as-the-fundamental-unit",
+    "href": "slides/01-talking-with-llms.html#tokens-as-the-fundamental-unit",
     "title": "Talking with LLMs via code",
-    "section": "Tokens as the fundamental unit (20 min)",
-    "text": "Tokens as the fundamental unit (20 min)\n\nWhat is a token?\nHow models predict the next token\nWhy this matters for cost and context length\nDemo: token possibilities visualizer"
+    "section": "Tokens as the fundamental unit",
+    "text": "Tokens as the fundamental unit\n\nWhat is a token?\nHow models predict the next token\nWhy this matters for cost and context length\n\n\n\n\nDemo\n\n\nWhat are tokens?\ncd demo/01-token-possibilities\nuv run shiny run app.py"
   },
   {
-    "objectID": "slides/01-talking-with-llms.html#try-a-chat-ui-in-seconds-20-min",
-    "href": "slides/01-talking-with-llms.html#try-a-chat-ui-in-seconds-20-min",
+    "objectID": "slides/01-talking-with-llms.html#try-a-chat-ui-in-seconds",
+    "href": "slides/01-talking-with-llms.html#try-a-chat-ui-in-seconds",
     "title": "Talking with LLMs via code",
-    "section": "Try a chat UI in seconds (20 min)",
-    "text": "Try a chat UI in seconds (20 min)\n\nlive_console() / live_browser() in ellmer\nchat.console() / chat.app() in chatlas"
+    "section": "Try a chat UI in seconds",
+    "text": "Try a chat UI in seconds\n\nlive_console() / live_browser() in ellmer\nchat.console() / chat.app() in chatlas"
+  },
+  {
+    "objectID": "slides/01-talking-with-llms.html#your-turn-3",
+    "href": "slides/01-talking-with-llms.html#your-turn-3",
+    "title": "Talking with LLMs via code",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 03-live and launch a live chat against your own chat object.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "slides/01-talking-with-llms.html#build-your-own-shiny-chat-app",
@@ -301,6 +336,13 @@
     "text": "Build your own Shiny chat app\n\nShiny chat_ui() and chat_append() (R: also chat_mod_server())"
   },
   {
+    "objectID": "slides/01-talking-with-llms.html#your-turn-4",
+    "href": "slides/01-talking-with-llms.html#your-turn-4",
+    "title": "Talking with LLMs via code",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 04-word-game-reverse and flip the word game so the LLM holds a secret word and gives hints; the user has to guess.\n\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
     "objectID": "slides/03-augmented-generation.html#context-in-better-answers-out-10-min",
     "href": "slides/03-augmented-generation.html#context-in-better-answers-out-10-min",
     "title": "Augmented generation",
@@ -308,11 +350,11 @@
     "text": "Context in, better answers out (10 min)\n\n“Retrieval-Augmented Generation” without any fancy infrastructure\nStuff the relevant docs into the prompt yourself\nMost “RAG” is this idea plus automation"
   },
   {
-    "objectID": "slides/03-augmented-generation.html#activity-coding-assistant-13-coding-assistant",
-    "href": "slides/03-augmented-generation.html#activity-coding-assistant-13-coding-assistant",
+    "objectID": "slides/03-augmented-generation.html#your-turn",
+    "href": "slides/03-augmented-generation.html#your-turn",
     "title": "Augmented generation",
-    "section": "Activity: coding assistant (13-coding-assistant)",
-    "text": "Activity: coding assistant (13-coding-assistant)\n\nAsk the LLM to write a function using a niche package (R: weathR, Python: NWS)\nFirst with no context; note what goes wrong\nThen paste the README into the prompt and compare"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 13-coding-assistant and try a coding assistant on a niche package (R: weathR, Python: NWS):\n\nFirst, ask with no context and note what goes wrong.\nThen paste the README into the prompt and compare.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "slides/03-augmented-generation.html#how-rag-actually-works-30-min",
@@ -322,11 +364,11 @@
     "text": "How RAG actually works (30 min)\n\nChunk your documents\nCompute embeddings for each chunk\nAt query time, find the most similar chunks and add them to the prompt\nThe “retrieval” is just nearest-neighbor search"
   },
   {
-    "objectID": "slides/03-augmented-generation.html#activity-build-a-dynamic-rag-system-14-rag",
-    "href": "slides/03-augmented-generation.html#activity-build-a-dynamic-rag-system-14-rag",
+    "objectID": "slides/03-augmented-generation.html#your-turn-1",
+    "href": "slides/03-augmented-generation.html#your-turn-1",
     "title": "Augmented generation",
-    "section": "Activity: build a dynamic RAG system (14-rag)",
-    "text": "Activity: build a dynamic RAG system (14-rag)\n\nSource documents: R for Data Science (R) or Polars Cookbook (Python)\nTools: ragnar (R), llama-index or chatlas helpers (Python)\nWire retrieval up as a tool the model can call"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 14-rag and build a dynamic RAG system:\n\nSource documents: R for Data Science (R) or Polars Cookbook (Python).\nTools: ragnar (R), llama-index or chatlas helpers (Python).\nWire retrieval up as a tool the model can call.\n\n\n\n\n\n  \n    −\n    +\n \n 20:00"
   },
   {
     "objectID": "slides/03-augmented-generation.html#letting-the-model-use-your-functions-20-min",
@@ -343,11 +385,11 @@
     "text": "Demos\n\nManual loop (_demos/manual-tools): see every step\nAutomatic loop (_demos/tools): let the library handle the round trips"
   },
   {
-    "objectID": "slides/03-augmented-generation.html#activity-quiz-show-with-tools-15-quiz-game-tools",
-    "href": "slides/03-augmented-generation.html#activity-quiz-show-with-tools-15-quiz-game-tools",
+    "objectID": "slides/03-augmented-generation.html#your-turn-2",
+    "href": "slides/03-augmented-generation.html#your-turn-2",
     "title": "Augmented generation",
-    "section": "Activity: quiz show with tools (15-quiz-game-tools)",
-    "text": "Activity: quiz show with tools (15-quiz-game-tools)\n\nProvide a function that plays a sound (R: beepr, Python: playsound)\nDocument it well and register it as a tool in the quiz show app\nWatch the model learn when to play which sound"
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 15-quiz-game-tools and wire tool calling into the quiz show app:\n\nProvide a function that plays a sound (R: beepr, Python: playsound).\nDocument it well and register it as a tool in the quiz show app.\nWatch the model learn when to play which sound.\n\n\n\n\n\n  \n    −\n    +\n \n 20:00"
   },
   {
     "objectID": "slides/03-augmented-generation.html#showing-tool-activity-to-users-30-min",
@@ -355,6 +397,13 @@
     "title": "Augmented generation",
     "section": "Showing tool activity to users (30 min)",
     "text": "Showing tool activity to users (30 min)\n\nTool annotations can give each tool an icon and title\nContentToolResult can return a custom title and icon\nTool calls can update reactive state in your Shiny app"
+  },
+  {
+    "objectID": "slides/03-augmented-generation.html#your-turn-3",
+    "href": "slides/03-augmented-generation.html#your-turn-3",
+    "title": "Augmented generation",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 16-quiz-game-ui and progressively upgrade the quiz show app:\n\nAdd tool annotations: give each tool an icon and title.\nReturn a ContentToolResult with a custom title and icon.\nTrack answers and score in reactive value boxes that update from tool calls.\n(Optional) Add a “finish round” tool that displays the final score.\n\n\n\n\n\n  \n    −\n    +\n \n 20:00"
   },
   {
     "objectID": "slides/05-ai-coding-assistants.html#what-well-cover-today",
@@ -418,131 +467,5 @@
     "title": "Chat-based assistance",
     "section": "Working through a real example",
     "text": "Working through a real example\nTODO"
-  },
-  {
-    "objectID": "slides/04-beyond-tools.html#your-turn",
-    "href": "slides/04-beyond-tools.html#your-turn",
-    "title": "Beyond tools",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 17-querychat and add querychat to an existing Shiny app.\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "slides/04-beyond-tools.html#your-turn-1",
-    "href": "slides/04-beyond-tools.html#your-turn-1",
-    "title": "Beyond tools",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 18-mcp and connect an MCP server to ellmer or chatlas:\n\nOptions to try: ArXiV, fetcher, git-ingest, github, context7.\nNotice: the model now has access to tools you did not write.\n\n\n\n\n\n  \n    −\n    +\n \n 15:00"
-  },
-  {
-    "objectID": "slides/02-programming-with-llms.html#your-turn",
-    "href": "slides/02-programming-with-llms.html#your-turn",
-    "title": "Programming with LLMs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 05-models and send the same prompt to several providers:\n\nChange one string to switch providers: chat_openai() vs. chat_anthropic(), etc.\nCompare answers, latency, and token usage.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "slides/02-programming-with-llms.html#your-turn-1",
-    "href": "slides/02-programming-with-llms.html#your-turn-1",
-    "title": "Programming with LLMs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nTry a multi-modal input:\n\nOpen 06-vision and pass food photos to ask for recipe suggestions.\nOpen 07-pdf and take a PDF recipe and turn it into clean Markdown.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "slides/02-programming-with-llms.html#your-turn-2",
-    "href": "slides/02-programming-with-llms.html#your-turn-2",
-    "title": "Programming with LLMs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 08-structured-output and extract structured fields from the recipe PDF (ingredients, steps, yield, prep time).\nTip: turn on use_attribute_docstrings in Pydantic to let docstrings guide the model.\n\n\n\n\n  \n    −\n    +\n \n 15:00"
-  },
-  {
-    "objectID": "slides/02-programming-with-llms.html#your-turn-3",
-    "href": "slides/02-programming-with-llms.html#your-turn-3",
-    "title": "Programming with LLMs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 09-batch and re-run the structured extraction across many recipes in parallel. Save the JSON output so we can reuse it later.\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "slides/02-programming-with-llms.html#your-turn-4",
-    "href": "slides/02-programming-with-llms.html#your-turn-4",
-    "title": "Programming with LLMs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 10-plot-interpret and ask the model about a plot:\n\nGenerate a plot of mpg vs. weight from mtcars.\nAsk the model to interpret it.\nDiscuss what it got right and where it leaned on priors.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "slides/02-programming-with-llms.html#your-turn-5",
-    "href": "slides/02-programming-with-llms.html#your-turn-5",
-    "title": "Programming with LLMs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 11-plot-noise:\n\nReplace the plot with random noise; keep the prompt the same.\nSee what the model says.\nPart 2: pair up and try to steer the model into a “decent” interpretation of pure noise.\n\n\n\n\n\n  \n    −\n    +\n \n 15:00"
-  },
-  {
-    "objectID": "slides/02-programming-with-llms.html#your-turn-6",
-    "href": "slides/02-programming-with-llms.html#your-turn-6",
-    "title": "Programming with LLMs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 12-quiz-game-prompt and write the system prompt for our quiz game show.\n\n\n\n\n  \n    −\n    +\n \n 15:00"
-  },
-  {
-    "objectID": "slides/01-talking-with-llms.html#your-turn",
-    "href": "slides/01-talking-with-llms.html#your-turn",
-    "title": "Talking with LLMs via code",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nIntroduce yourself to your neighbors.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "slides/01-talking-with-llms.html#your-turn-1",
-    "href": "slides/01-talking-with-llms.html#your-turn-1",
-    "title": "Talking with LLMs via code",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 01-hello-llm and make your first API call by writing a short “I’m at SIAS 2026” social media post.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "slides/01-talking-with-llms.html#your-turn-2",
-    "href": "slides/01-talking-with-llms.html#your-turn-2",
-    "title": "Talking with LLMs via code",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 02-word-game and play a word guessing game:\n\nSystem prompt: You are playing a word guessing game. At each turn, guess the word and tell us what it is.\nInclude a modifier in the first message (e.g. “In British English,” “In pirate,”) and watch how it steers later answers.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "slides/01-talking-with-llms.html#your-turn-3",
-    "href": "slides/01-talking-with-llms.html#your-turn-3",
-    "title": "Talking with LLMs via code",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 03-live and launch a live chat against your own chat object.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "slides/01-talking-with-llms.html#your-turn-4",
-    "href": "slides/01-talking-with-llms.html#your-turn-4",
-    "title": "Talking with LLMs via code",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 04-word-game-reverse and flip the word game so the LLM holds a secret word and gives hints; the user has to guess.\n\n\n\n\n  \n    −\n    +\n \n 15:00"
-  },
-  {
-    "objectID": "slides/03-augmented-generation.html#your-turn",
-    "href": "slides/03-augmented-generation.html#your-turn",
-    "title": "Augmented generation",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 13-coding-assistant and try a coding assistant on a niche package (R: weathR, Python: NWS):\n\nFirst, ask with no context and note what goes wrong.\nThen paste the README into the prompt and compare.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "slides/03-augmented-generation.html#your-turn-1",
-    "href": "slides/03-augmented-generation.html#your-turn-1",
-    "title": "Augmented generation",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 14-rag and build a dynamic RAG system:\n\nSource documents: R for Data Science (R) or Polars Cookbook (Python).\nTools: ragnar (R), llama-index or chatlas helpers (Python).\nWire retrieval up as a tool the model can call.\n\n\n\n\n\n  \n    −\n    +\n \n 20:00"
-  },
-  {
-    "objectID": "slides/03-augmented-generation.html#your-turn-2",
-    "href": "slides/03-augmented-generation.html#your-turn-2",
-    "title": "Augmented generation",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 15-quiz-game-tools and wire tool calling into the quiz show app:\n\nProvide a function that plays a sound (R: beepr, Python: playsound).\nDocument it well and register it as a tool in the quiz show app.\nWatch the model learn when to play which sound.\n\n\n\n\n\n  \n    −\n    +\n \n 20:00"
-  },
-  {
-    "objectID": "slides/03-augmented-generation.html#your-turn-3",
-    "href": "slides/03-augmented-generation.html#your-turn-3",
-    "title": "Augmented generation",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\nActivity\n\n\nOpen 16-quiz-game-ui and progressively upgrade the quiz show app:\n\nAdd tool annotations: give each tool an icon and title.\nReturn a ContentToolResult with a custom title and icon.\nTrack answers and score in reactive value boxes that update from tool calls.\n(Optional) Add a “finish round” tool that displays the final score.\n\n\n\n\n\n  \n    −\n    +\n \n 20:00"
   }
 ]
