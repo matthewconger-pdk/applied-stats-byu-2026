@@ -51,9 +51,9 @@ Code files for working along [are available on GitHub](https://github.com/julias
 | 10:10 - 10:30 | *Break*                                                             |
 | 10:30 - 11:45 | [Programming with LLMs](slides/02-programming-with-llms.html)              |
 | 11:45 - 13:30 | *Lunch*                                                              |
-| 13:30 - 14:40 | [Augmented generation](slides/03-augmented-generation.html)                |
+| 13:30 - 14:40 | [Prompt engineering and RAG](slides/03-prompt-engineering.html)                |
 | 14:40 - 15:00 | *Break*                                                             |
-| 15:00 - 16:15 | [Beyond tools](slides/04-beyond-tools.html)                                |
+| 15:00 - 16:15 | [Beyond prompts](slides/04-beyond-prompts.html)                                |
 
 ### Wednesday, 18 June 2026: Build with AI
 
