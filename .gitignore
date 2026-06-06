@@ -21,5 +21,6 @@ renv/staging/
 # Local env / secrets
 .env
 .env.local
+.Renviron
 
 **/*.quarto_ipynb
