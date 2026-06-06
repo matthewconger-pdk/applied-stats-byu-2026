@@ -1,0 +1,82 @@
+---
+title: "Retrieval-Augmented Generation"
+subtitle: "Demo for deck 03: Prompt engineering and RAG"
+format: html
+---
+
+Instructor demo: build a dynamic RAG system over the "R for Data Science" book.
+We chunk the text, embed each chunk, and expose retrieval as a tool the chat
+model can call.
+
+Retrieval embeddings use OpenAI (Anthropic has no embeddings API), but the chat
+model is Claude. Needs `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` in your
+`.Renviron`. Run the chunks interactively rather than rendering.
+
+```{r}
+#| label: setup
+#| message: false
+library(ragnar)
+library(ellmer)
+```
+
+## Crawl, chunk, and embed the book
+
+Crawl the R for Data Science website to find its pages, then create a `ragnar`
+store that embeds each chunk with OpenAI's `text-embedding-3-small`. Reading a
+page as markdown, chunking it, and inserting the chunks sends each chunk to
+OpenAI for an embedding, which `ragnar` stores alongside the original text.
+
+```{r}
+base_url <- "https://r4ds.hadley.nz"
+pages <- ragnar_find_links(base_url, children_only = TRUE)
+
+store_location <- here::here("data/r4ds.ragnar.duckdb")
+
+store <- ragnar_store_create(
+  store_location,
+  title = "R for Data Science",
+  # Set overwrite = TRUE to rebuild from scratch.
+  embed = \(x) embed_openai(x, model = "text-embedding-3-small")
+)
+
+for (page in pages) {
+  chunks <- page |> read_as_markdown() |> markdown_chunk()
+  ragnar_store_insert(store, chunks)
+}
+
+ragnar_store_build_index(store)
+```
+
+## Inspect what the store retrieves
+
+Which chunks surface for a given question? The store inspector app lets you try
+example questions against the store and see the retrieved chunks.
+
+```{r}
+ragnar_store_inspect(store)
+```
+
+## Chat with the book
+
+`ragnar` provides a tool that attaches to an `ellmer` chat client and lets the
+model retrieve relevant chunks on demand. Here the chat model is Claude; paste a
+real "how do I ..." R question into the chat and watch it cite retrieved
+passages.
+
+```{r}
+chat <- chat(
+  "anthropic/claude-sonnet-4-6",
+  system_prompt = r"--(
+You are an expert R programmer and mentor. You are concise.
+
+Before responding, retrieve relevant material from the knowledge store. Quote or
+paraphrase passages, clearly marking your own words versus the source. Provide a
+working link for every source you cite.
+)--"
+)
+
+# Choose how many chunks to retrieve each time the model calls the tool.
+ragnar_register_tool_retrieve(chat, store, top_k = 10)
+
+live_browser(chat)
+```
