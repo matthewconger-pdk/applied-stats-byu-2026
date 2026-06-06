@@ -1,11 +1,11 @@
 # Clearbot
 
-Clearbot is a chatbot UI designed to illustrate a few features of LLM APIs. It is built using [Shiny](https://) (Python) and Chatlas.
+Clearbot is a chatbot UI designed to illustrate a few features of LLM APIs. It is built using [Shiny](https://shiny.posit.co/) (Python) and Chatlas.
 
 It has three main features:
 
 1. Allows you to set the system prompt and other parameters.
-2. Has toggle-able tools for filesystem access and web search.
+2. Has toggle-able tools for weather, filesystem access, and web search.
 3. Lets you inspect the underlying JSON request/response data.
 
 ## Requirements
@@ -15,13 +15,6 @@ You can either set these environment variables manually, or include a [`.env` fi
 The following environment variable is **required**:
 
 - `ANTHROPIC_API_KEY` - Used to access Anthropic LLM models.
-
-### Web search
-
-Web search is an optional feature that allows the chatbot to use Google to perform web searches. This involves creating a [Google Programmable Search Engine](https://programmablesearchengine.google.com/) and [getting an API Key](https://developers.google.com/custom-search/v1/introduction).
-
-- `GOOGLE_SEARCH_ENGINE_ID` - The ID of your Programmable Search Engine instance. Roughly 18 hexadecimal characters.
-- `GOOGLE_API_KEY` - Roughly 39 alphanumeric characters.
 
 ## Usage
 

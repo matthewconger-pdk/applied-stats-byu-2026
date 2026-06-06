@@ -1,5 +1,4 @@
 import functools
-import json
 import os
 import traceback
 from typing import Callable, ParamSpec, TypeVar, Union
@@ -87,36 +86,6 @@ def get_weather_forecast(lat: float, lon: float):
 
 
 @safe_errors
-def google_search(query: str, start: int = 1):
-    """Searches the web using the Google search engine."""
-
-    # Make a request to https://customsearch.googleapis.com/customsearch/v1?cx={os.environ.GOOGLE_SEARCH_ENGINE_ID}&q=&key={os.environ.GOOGLE_API_KEY}
-    response = requests.get(
-        "https://customsearch.googleapis.com/customsearch/v1",
-        params={
-            "cx": os.environ["GOOGLE_SEARCH_ENGINE_ID"],
-            "q": query,
-            "key": os.environ["GOOGLE_API_KEY"],
-            "num": 10,
-            "start": start,
-        },
-    )
-    response.raise_for_status()
-    results = response.json()
-    return json.dumps(
-        [
-            {
-                "title": item["title"],
-                "link": item["link"],
-                "snippet": item["snippet"],
-            }
-            for item in results["items"]
-        ],
-        indent=2,
-    )
-
-
-@safe_errors
 def duckduckgo_search(query: str, max_results: int = 20):
     """Searches the web using the DuckDuckGo search engine."""
 
@@ -161,11 +130,7 @@ def http_get(url: str) -> str:
         return response.text
 
 
-search_tools = [http_get]
-if os.environ.get("GOOGLE_API_KEY") and os.environ.get("GOOGLE_SEARCH_ENGINE_ID"):
-    search_tools.append(google_search)
-else:
-    search_tools.append(duckduckgo_search)
+search_tools = [http_get, duckduckgo_search]
 
 all_tools: dict[str, list[Callable]] = {
     "weather": [get_weather_forecast],
