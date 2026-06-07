@@ -16,7 +16,6 @@ Imports:
     here,
     magick,
     nanoparquet,
-    querychat,
     ragnar,
     shiny,
     shinychat,
