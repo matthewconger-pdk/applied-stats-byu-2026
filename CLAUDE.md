@@ -29,7 +29,6 @@ Open items:
 - `_extensions/`: `gadenbuie/countdown` (timer shortcode) and `quarto-ext/fontawesome`.
 - `_quarto.yml`: website config; theme is `[zephyr, footer.scss]`. Output dir is `docs/`.
 - `footer.scss`: site SCSS. Disables zephyr's Google Fonts import via `$web-font-path: false`, plus footer layout and table-width rules.
-- `init-env.sh`: local setup helper for R (renv) + Python (uv). No Codespaces.
 - `requirements.txt`: Python packages (`chatlas`, `shiny`, plus deps).
 - `DESCRIPTION`: R dependency manifest (`Type: Workshop`). Licensing: course content (slides, prose) is CC BY-NC-SA 4.0 (root `LICENSE.md`, matching the site footer and `DESCRIPTION`); the demos are MIT (built on Garrick Aden-Buie's work), each `demo/*` carries its own MIT `LICENSE`.
 - Renamed `footer.scss` from `footer.css` because it contains SCSS (`$var` syntax). Do not rename back, the CSS linter will complain.
